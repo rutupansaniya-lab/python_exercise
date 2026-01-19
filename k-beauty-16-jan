@@ -1,0 +1,12 @@
+class Solution:
+    def divisorSubstrings(self, num: int, k: int) -> int:
+        number = str(num)
+        n = len(number)
+        i = 0
+        ctr = 0
+        while i + k <= n:
+            temp = int(number[i:k+i])
+            if temp and num % temp == 0:
+                ctr += 1
+            i += 1
+        return ctr
