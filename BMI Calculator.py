@@ -1,4 +1,6 @@
 import random
+
+import git
 # function to calculate BMI with file logging
 def calculate_bmi(weight, height):  
     bmi = weight / (height ** 2)
@@ -84,4 +86,6 @@ def main():
     print(f"Your BMI is: {bmi:.2f}, {s}")
 # run the main function
 if __name__ == "__main__":
+    #call the main function
     main()  
+
