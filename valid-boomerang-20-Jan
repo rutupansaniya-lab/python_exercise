@@ -1,0 +1,17 @@
+class Solution:
+    def isBoomerang(self, points: List[List[int]]) -> bool:
+        point1=points[0]
+        point2=points[1]
+        point3=points[2]
+
+        x1=point1[0]
+        x2=point2[0]
+        x3=point3[0]
+        y1=point1[1]
+        y2=point2[1]
+        y3=point3[1]
+  
+        if (y2-y1)*(x3-x2)==(y3-y2)*(x2-x1):
+            return False
+        return True
+            
